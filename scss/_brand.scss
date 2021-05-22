@@ -1,0 +1,152 @@
+.brand__footer {
+	min-height: 460px;
+	max-width: 100%;
+	padding-top: 109px;
+	padding-bottom: 90px;
+	background-color: #ffffff;
+	&-row {
+		@include flexbox();
+	}
+}
+
+
+@media (max-width: 1000px) {
+	.brand__footer {
+		padding-top: 70px;
+		padding-bottom: 45px;
+		&-row {
+			flex-direction: column;
+		}
+	}
+}
+
+.brand__description {
+	flex: 0 1 40%;
+	&-row {
+		@include flexbox();
+		flex-direction: column;
+	}
+}
+
+.brand__logo {
+	display: inline-flex;
+}
+
+.logo {
+	@include flexbox();
+	margin-right: 13px;
+	height: 100%;
+	&:hover {
+		box-shadow: 0 0px 15px rgba(241, 99, 99, 0.8);
+		border-radius: 15px;
+	}
+	&:active {
+		box-shadow: 0 0px 5px rgba(36, 0, 241, 0.8);
+	}
+	.brand {
+		color: #222222;
+		font-size: 27px;
+		font-weight: 300;
+		line-height: 32px;
+		text-transform: uppercase;
+		font-family: "Lato Light";
+		letter-spacing: 0.68px;
+		padding: 8px 0 0 12px;
+		align-self: center;
+	}
+	.letter {
+		color: #f16d7f;
+		font-family: Lato;
+		font-weight: 700;
+		letter-spacing: 0.68px;
+		margin-right: 37px;
+		;
+	}
+}
+
+.brand__description-text {
+	color: #898989;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+	letter-spacing: 0.35px;
+	padding-top: 20px;
+	padding-right: 27px;
+	p:first-child {
+		padding-bottom: 20px;
+	}
+}
+
+.brand-columns {
+	flex: 0 1 60%;
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 1000px) {
+	.brand-columns {
+		padding-top: 15px;
+	}
+}
+
+@media (max-width: 550px) {
+	.brand-columns {
+		&__row {
+			flex-direction: column;
+		}
+	}
+}
+
+
+.brand__menu {
+	flex: 0 1 100%;
+	height: 100%;
+	padding-left: 37px;
+	&-row {
+		@include flexbox();
+		flex-direction: column;
+	}
+	&-title {
+		color: #f16d7f;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 46px;
+		text-align: left;
+		text-transform: uppercase;
+		letter-spacing: 0.45px;
+		padding-bottom: 8px;
+	}
+	&-items {
+
+	}
+	&-list {
+
+	}
+	&-link {
+		color: #898989;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: left;
+		letter-spacing: 0.4px;
+		line-height: 59px;
+		letter-spacing: 0.4px;
+		line-height: 42px;
+		&:hover {
+			color: #ef5b70;
+		}
+		&:active {
+			color: #ef5b70;
+			font-weight: 700;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.brand__menu {
+		padding-left: 0;
+	}
+}
